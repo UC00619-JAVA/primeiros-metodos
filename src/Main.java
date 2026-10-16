@@ -1,5 +1,19 @@
 public class Main {
 
+    public static void main(String[] args) {
+        printLine(5, '*');                                    // *****
+
+        System.out.println("square(7) = " + square(7));       // 49
+        System.out.println("max(12, 8) = " + max(12, 8));     // 12
+        System.out.println("isEven(10) = " + isEven(10));     // true
+        System.out.println("isEven(7) = " + isEven(7));       // false
+
+        double[] grades = {12.0, 15.5, 9.0, 17.5};
+        System.out.println("average = " + average(grades));   // 13.5
+
+        System.out.println("vowels = " + countVowels("Programming in Java"));   // 6
+    }
+
     // Prints the character c, n times, on the same line
     public static void printLine(int n, char c) {
         for (int i = 0; i < n; i++) {
@@ -46,19 +60,5 @@ public class Main {
             }
         }
         return count;
-    }
-
-    public static void main(String[] args) {
-        printLine(5, '*');                                    // *****
-
-        System.out.println("square(7) = " + square(7));       // 49
-        System.out.println("max(12, 8) = " + max(12, 8));     // 12
-        System.out.println("isEven(10) = " + isEven(10));     // true
-        System.out.println("isEven(7) = " + isEven(7));       // false
-
-        double[] grades = {12.0, 15.5, 9.0, 17.5};
-        System.out.println("average = " + average(grades));   // 13.5
-
-        System.out.println("vowels = " + countVowels("Programming in Java"));   // 6
     }
 }
